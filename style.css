@@ -1,8 +1,8 @@
 /* style.css - DESIGN COM IMAGEM DE FUNDO + DEGRADÊ */
 :root {
     /* PALETA AZUL - Tons mais fortes para o degradê */
-    --primary-dark: #0A1A3A; /* Azul muito escuro */
-    --primary-color: #9dc4ff; /* Azul escuro principal */
+    --primary-dark: hsl(220, 71%, 13%); /* Azul muito escuro */
+    --primary-color: #ffffff; /* Azul escuro principal */
     --primary-medium: #2A3B7C; /* Azul médio */
     --accent-color: #99bef5; /* Azul vibrante */
     --accent-light: #5AA5FF; /* Azul claro */
