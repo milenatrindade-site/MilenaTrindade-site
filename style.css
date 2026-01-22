@@ -18,6 +18,12 @@
     --border-radius-lg: 20px;
 }
 
+
+{
+  .location-map
+  align: center;
+}
+
 * {
     margin: 0;
     padding: 0;
