@@ -127,15 +127,38 @@ button:hover {
 }
 
 /* RESPONSIVO */
+/* TABLET */
 @media (max-width: 900px) {
   .lista-produtos {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 }
 
-@media (max-width: 500px) {
+/* MOBILE */
+@media (max-width: 480px) {
   .lista-produtos {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .produto,
+  .item {
+    padding: 16px;
+  }
+
+  .nome {
+    font-size: 13px;
+  }
+
+  .preco {
+    font-size: 13px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 11px;
   }
 }
+
 
