@@ -982,3 +982,8 @@ footer {
         margin-top: 20px;
     }
 }
+
+.btn-link
+   { 
+    color: white;
+   }
