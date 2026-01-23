@@ -18,21 +18,27 @@ body {
   padding: 20px 40px;
   background: #00207942;
   border-bottom: 1px solid #e5e7eb;
+  position: relative;
 }
+
 
 .categoria {
   font-size: 13px;
   letter-spacing: 5px;
   color: #2f4f7f;
   font-weight: 500;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.ordenar select {
-  padding: 8px 14px;
-  border-radius: 8px;
-  border: 1px solid #cbd5e1;
-  color: #2f4f7f;
+
+.ordenar {
+
+  margin-left: auto;
 }
+
 
 /* CONTAINER */
 .container {
@@ -121,37 +127,15 @@ button:hover {
 }
 
 /* RESPONSIVO */
-/* TABLET */
 @media (max-width: 900px) {
   .lista-produtos {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
   }
 }
 
-/* MOBILE */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .lista-produtos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
-  .produto,
-  .item {
-    padding: 16px;
-  }
-
-  .nome {
-    font-size: 13px;
-  }
-
-  .preco {
-    font-size: 13px;
-  }
-
-  button {
-    padding: 10px;
-    font-size: 11px;
+    grid-template-columns: 1fr;
   }
 }
 
