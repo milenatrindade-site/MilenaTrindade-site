@@ -16,13 +16,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: #fff;
+  background: #00207942;
   border-bottom: 1px solid #e5e7eb;
 }
 
 .categoria {
   font-size: 13px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   color: #2f4f7f;
   font-weight: 500;
 }
@@ -132,3 +132,4 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+
