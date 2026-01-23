@@ -977,8 +977,8 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 406px) {
+@media (max-width: 206px) {
     .location-map {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
