@@ -993,9 +993,11 @@ footer {
 @media (max-width: 768px) {
   .map-container {
     width: 100%;
-    height: 300px; /* ajusta a altura no celular */
+    height: 300px;
+    margin: 0 auto;
   }
 }
+
 
 
 .btn-link
