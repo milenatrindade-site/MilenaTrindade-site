@@ -1,6 +1,5 @@
-// ...existing code...
 document.addEventListener('DOMContentLoaded', function() {
-    // Menu toggle para mobile
+    // versao prs celular 
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Fechar menu ao clicar em um link
+    // Fechar ao clicar em um link
     const navLinks = document.querySelectorAll('.nav-menu a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {

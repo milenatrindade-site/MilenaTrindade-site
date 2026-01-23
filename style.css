@@ -19,11 +19,6 @@
 }
 
 
-{
-  .location-map
-  align: center;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -960,4 +955,24 @@ footer {
     .content-card {
         padding: 25px !important;
     }
+}
+
+/* Minha Loja */
+.link-loja {
+  position: relative;
+}
+
+.link-loja::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #7fb2ff;
+  transition: 0.3s ease;
+}
+
+.link-loja:hover::after {
+  width: 100%;
 }

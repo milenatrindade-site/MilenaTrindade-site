@@ -1,13 +1,126 @@
 <!DOCTYPE html>
-<html lang="Pt-Br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja-milena</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>milena store</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    conte
-    
+
+<header class="topo">
+<span class="categoria">MILENA STORE</span>
+
+
+<div class="ordenar">
+<select>
+<option>Mais novo ao mais antigo</option>
+<option>Menor preço</option>
+<option>Maior preço</option>
+</select>
+</div>
+</header>
+
+
+<main class="container">
+<section class="recomendados">
+  <h2>VOCÊ VAI GOSTAR!</h2>
+
+    <div class="lista-produtos">
+
+      <article class="produto destaque">
+        <img src="../img/loja/durag.jpeg" alt="">
+        <p class="nome">Durag de cetim e malha</p>
+        <p class="preco">R$ 22,00<br>
+            <br>
+        <button onclick="comprar('Durag de cetim e malha', '22,00')">COMPRAR</button>
+      </article>
+
+        <article class="produto destaque">
+        <img src="../img/loja/lacinhodecetim.jpeg" alt="">
+        <p class="nome">Lacinho de cetim</p>
+        <p class="preco">R$ 5,00<br>
+            <br>
+        <button onclick="comprar('Lacinho de cetim', '5,00')">COMPRAR</button>
+      </article>
+
+        <article class="produto destaque">
+        <img src="../img/loja/wigcap.jpeg" alt="">
+        <p class="nome">Wig Cap</p>
+        <p class="preco">R$ 15,00<br>
+            <br>
+        <button onclick="comprar('Wig Cap', '15,00')">COMPRAR</button>
+      </article>
+
+        <article class="produto destaque">
+        <img src="../img/loja/escova.jpeg" alt="">
+        <p class="nome">Escova para acabamento e penteados / 3 fileiras</p>
+        <p class="preco">R$ 10,00<br>
+            <br>
+        <button onclick="comprar('Escova para acabamento e penteados / 3 fileiras', '10,00')">COMPRAR</button>
+      </article>
+
+        <article class="produto destaque">
+        <img src="../img/loja/escovababy.jpeg" alt="">
+        <p class="nome">Escova Baby Hair com cabo de aço</p>
+        <p class="preco">R$ 8,00<br>
+            <br>
+        <button onclick="comprar('Escova Baby Hair com cabo de aço', '8,00')">COMPRAR</button>
+      </article>
+
+
+        <article class="produto destaque">
+        <img src="../img/loja/escovapolvo.jpeg" alt="">
+        <p class="nome">Escolva Polvo</p>
+        <p class="preco">R$ 10,00<br>
+            <br>
+        <button onclick="comprar('Escolva Polvo', '10,00')">COMPRAR</button>
+      </article>
+
+
+        <article class="produto destaque">
+        <img src="../img/loja/minoxidilkk.jpeg" alt="">
+        <p class="nome">Tônico capilar - ser mulher</p>
+        <p class="preco">R$ 30,00<br>
+            <br>
+        <button onclick="comprar('Tônico capilar - ser mulher', '30,00')">COMPRAR</button>
+      </article>
+
+
+
+        <article class="produto destaque">
+        <img src="../img/loja/gel.jpeg" alt="">
+        <p class="nome">Gel Zhang Hair</p>
+        <p class="preco">R$ 20,00<br>
+            <br>
+        <button onclick="comprar('Gel Zhang Hair', '20,00')">COMPRAR</button>
+      </article>
+
+
+        <article class="produto destaque">
+        <img src="../img/loja/spraycinza.jpeg" alt="">
+        <p class="nome">Reparador de ponta - ser mulher</p>
+        <p class="preco">R$ 30,00<br>
+            <br>
+        <button onclick="comprar('Reparador de ponta - ser mulher', '30,00')">COMPRAR</button>
+      </article>
+
+
+
+        <article class="produto destaque">
+        <img src="../img/loja/mousse.jpeg" alt="">
+        <p class="nome">Mousse capilar</p>
+        <p class="preco">R$ 42,00<br>
+            <br>
+        <button onclick="comprar('Mousse capilar', '42,00')">COMPRAR</button>
+      </article>
+    </section>
+
+
+<script src="script.js"></script>
 </body>
 </html>
