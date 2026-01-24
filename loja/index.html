@@ -1,118 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>milena store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>milena store</title>
 
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
 </head>
+
 <body>
+  <header class="topo">
+    <span class="categoria">MILENA STORE</span>
+  </header>
 
+  <main class="container">
+    <section class="recomendados">
+      <h2>VOCÊ VAI GOSTAR!</h2>
 
-<header class="topo">
-<span class="categoria">MILENA STORE</span>
+      <div class="lista-produtos">
 
-</header>
+        <article class="produto destaque" data-nome="Durag de cetim e malha" data-preco="22.00">
+          <img src="../img/loja/durag.jpeg" alt="">
+          <p class="nome">Durag de cetim e malha</p>
+          <p class="preco">R$ 22,00</p>
 
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
 
-<main class="container">
-<section class="recomendados">
-  <h2>VOCÊ VAI GOSTAR!</h2>
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
 
-    <div class="lista-produtos">
+        <article class="produto destaque" data-nome="Lacinho de cetim" data-preco="5.00">
+          <img src="../img/loja/lacinhodecetim.jpeg" alt="">
+          <p class="nome">Lacinho de cetim</p>
+          <p class="preco">R$ 5,00</p>
 
-      <article class="produto destaque">
-        <img src="../img/loja/durag.jpeg" alt="">
-        <p class="nome">Durag de cetim e malha</p>
-        <p class="preco">R$ 22,00<br>
-            <br>
-        <button onclick="comprar('Durag de cetim e malha', '22,00')">COMPRAR</button>
-      </article>
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
 
-        <article class="produto destaque">
-        <img src="../img/loja/lacinhodecetim.jpeg" alt="">
-        <p class="nome">Lacinho de cetim</p>
-        <p class="preco">R$ 5,00<br>
-            <br>
-        <button onclick="comprar('Lacinho de cetim', '5,00')">COMPRAR</button>
-      </article>
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
 
-        <article class="produto destaque">
-        <img src="../img/loja/wigcap.jpeg" alt="">
-        <p class="nome">Wig Cap</p>
-        <p class="preco">R$ 15,00<br>
-            <br>
-        <button onclick="comprar('Wig Cap', '15,00')">COMPRAR</button>
-      </article>
+        <article class="produto destaque" data-nome="Wig Cap" data-preco="15.00">
+          <img src="../img/loja/wigcap.jpeg" alt="">
+          <p class="nome">Wig Cap</p>
+          <p class="preco">R$ 15,00</p>
 
-        <article class="produto destaque">
-        <img src="../img/loja/escova.jpeg" alt="">
-        <p class="nome">Escova para acabamento e penteados / 3 fileiras</p>
-        <p class="preco">R$ 10,00<br>
-            <br>
-        <button onclick="comprar('Escova para acabamento e penteados / 3 fileiras', '10,00')">COMPRAR</button>
-      </article>
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
 
-        <article class="produto destaque">
-        <img src="../img/loja/escovababy.jpeg" alt="">
-        <p class="nome">Escova Baby Hair com cabo de aço</p>
-        <p class="preco">R$ 8,00<br>
-            <br>
-        <button onclick="comprar('Escova Baby Hair com cabo de aço', '8,00')">COMPRAR</button>
-      </article>
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
 
+        <article class="produto destaque" data-nome="Escova para acabamento e penteados / 3 fileiras" data-preco="10.00">
+          <img src="../img/loja/escova.jpeg" alt="">
+          <p class="nome">Escova para acabamento e penteados / 3 fileiras</p>
+          <p class="preco">R$ 10,00</p>
 
-        <article class="produto destaque">
-        <img src="../img/loja/escovapolvo.jpeg" alt="">
-        <p class="nome">Escolva Polvo</p>
-        <p class="preco">R$ 10,00<br>
-            <br>
-        <button onclick="comprar('Escolva Polvo', '10,00')">COMPRAR</button>
-      </article>
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
 
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
 
-        <article class="produto destaque">
-        <img src="../img/loja/minoxidilkk.jpeg" alt="">
-        <p class="nome">Tônico capilar - ser mulher</p>
-        <p class="preco">R$ 30,00<br>
-            <br>
-        <button onclick="comprar('Tônico capilar - ser mulher', '30,00')">COMPRAR</button>
-      </article>
+        <article class="produto destaque" data-nome="Escova Baby Hair com cabo de aço" data-preco="8.00">
+          <img src="../img/loja/escovababy.jpeg" alt="">
+          <p class="nome">Escova Baby Hair com cabo de aço</p>
+          <p class="preco">R$ 8,00</p>
 
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
 
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
 
-        <article class="produto destaque">
-        <img src="../img/loja/gel.jpeg" alt="">
-        <p class="nome">Gel Zhang Hair</p>
-        <p class="preco">R$ 20,00<br>
-            <br>
-        <button onclick="comprar('Gel Zhang Hair', '20,00')">COMPRAR</button>
-      </article>
+        <article class="produto destaque" data-nome="Escova Polvo" data-preco="10.00">
+          <img src="../img/loja/escovapolvo.jpeg" alt="">
+          <p class="nome">Escova Polvo</p>
+          <p class="preco">R$ 10,00</p>
 
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
 
-        <article class="produto destaque">
-        <img src="../img/loja/spraycinza.jpeg" alt="">
-        <p class="nome">Reparador de ponta - ser mulher</p>
-        <p class="preco">R$ 30,00<br>
-            <br>
-        <button onclick="comprar('Reparador de ponta - ser mulher', '30,00')">COMPRAR</button>
-      </article>
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
 
+        <article class="produto destaque" data-nome="Tônico capilar - ser mulher" data-preco="30.00">
+          <img src="../img/loja/minoxidilkk.jpeg" alt="">
+          <p class="nome">Tônico capilar - ser mulher</p>
+          <p class="preco">R$ 30,00</p>
 
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
 
-        <article class="produto destaque">
-        <img src="../img/loja/mousse.jpeg" alt="">
-        <p class="nome">Mousse capilar</p>
-        <p class="preco">R$ 42,00<br>
-            <br>
-        <button onclick="comprar('Mousse capilar', '42,00')">COMPRAR</button>
-      </article>
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
+
+        <article class="produto destaque" data-nome="Gel Zhang Hair" data-preco="20.00">
+          <img src="../img/loja/gel.jpeg" alt="">
+          <p class="nome">Gel Zhang Hair</p>
+          <p class="preco">R$ 20,00</p>
+
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
+
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
+
+        <article class="produto destaque" data-nome="Reparador de ponta - ser mulher" data-preco="30.00">
+          <img src="../img/loja/spraycinza.jpeg" alt="">
+          <p class="nome">Reparador de ponta - ser mulher</p>
+          <p class="preco">R$ 30,00</p>
+
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
+
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
+
+        <article class="produto destaque" data-nome="Mousse capilar" data-preco="42.00">
+          <img src="../img/loja/mousse.jpeg" alt="">
+          <p class="nome">Mousse capilar</p>
+          <p class="preco">R$ 42,00</p>
+
+          <button class="btn-comprar" onclick="comprar(this)">COMPRAR</button>
+
+          <div class="qtd-area">
+            <div class="qtd-controles">
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, -1)">−</button>
+              <span class="qtd-num" data-qtd>1</span>
+              <button type="button" class="qtd-btn" onclick="mudarQtd(this, 1)">+</button>
+            </div>
+            <div class="total-card">Total: <span data-total>R$ 0,00</span></div>
+          </div>
+        </article>
+
+      </div>
     </section>
+  </main>
 
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
